@@ -1,4 +1,4 @@
-grails-quick-bootrap
+grails-quick-bootstrap
 ====================
 
 A template grails app to get started quickly, based on twitter bootstrap and other tools
