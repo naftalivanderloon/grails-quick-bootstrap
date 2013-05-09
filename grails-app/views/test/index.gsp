@@ -3,7 +3,7 @@
 <head>
 <title><g:message code="test.index.welcome" /></title>
 <meta name="layout" content="bootstrap">
-<r:require modules="test_index"/>
+<r:require modules="test_index, bootstrap"/>
 <r:script>
 	// we can add and override server side rendered messages to the global i18n
 	i18n['language']="${grailsApplication.config.app.language}"

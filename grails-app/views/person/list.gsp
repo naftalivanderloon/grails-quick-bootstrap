@@ -4,6 +4,7 @@
 <html>
 	<head>
 		<meta name="layout" content="bootstrap">
+		<r:require modules="bootstrap"/>
 		<g:set var="entityName" value="${message(code: 'person.label', default: 'Person')}" />
 		<title><g:message code="default.list.label" args="[entityName]" /></title>
 	</head>
@@ -65,7 +66,7 @@
 						
 							<td>${fieldValue(bean: personInstance, field: "email")}</td>
 						
-							<td><g:formatDate format="${message(code:"default.date.format.short")}" date="${personInstance?.dateOfBirth}" /></td>
+							<td><g:formatDate date="${personInstance.dateOfBirth}" /></td>
 						
 							<td class="link">
 								<g:link action="show" id="${personInstance.id}" class="btn btn-small">Show &raquo;</g:link>
