@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<meta name="layout" content="bootstrap">
+		<r:require modules="bootstrap"/>
 		<g:set var="entityName" value="${message(code: 'person.label', default: 'Person')}" />
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
 	</head>
@@ -52,8 +53,6 @@
 				<fieldset>
 					<g:form class="form-horizontal" action="create" >
 						<fieldset>
-						<!--  _form.gsp not used here, uses f:all instead -->
-						<!-- f:field bean="personInstance" property="firstName" input-css="info" labelcss="label-warning"/ --> 
 							<f:all bean="personInstance"/>
 							<div class="form-actions">
 								<button type="submit" class="btn btn-primary">
